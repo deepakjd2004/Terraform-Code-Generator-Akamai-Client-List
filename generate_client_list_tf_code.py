@@ -1,7 +1,3 @@
-# **********************************************************************************************************************************************************************************
-# AUTHOR - Deepak Jha
-# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# DATE CREATED - 05-AUG-2024
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # PURPOSE - Run this script to generate terraform code to import existing client lists into terraform stack.
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -14,8 +10,8 @@
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # PRE-REQUISITE - 
 # 1) API credential setup correctly
-# 2) Python 3 - I have tested with version 3.12
-# 3) Install these python packages(latest should be fine) using pip or other methods - pyYaml, requests, json, akamai.edgegrid, urllib and logging.
+# 2) Python 3 
+# 3) Install these python packages(latest should be fine) using pip or other methods - pyYaml, requests, akamai.edgegrid, urllib and logging.
 # **********************************************************************************************************************************************************************************
 
 import yaml
@@ -24,7 +20,7 @@ import json
 from akamai.edgegrid import EdgeGridAuth, EdgeRc
 from urllib.parse import urljoin
 from os.path import expanduser
-import logging
+# import logging
 
 # Configure logging
 #logging.basicConfig(level=logging.DEBUG)

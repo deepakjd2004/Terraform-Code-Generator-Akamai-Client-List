@@ -2,11 +2,12 @@
 
 # Generate terraform code for managing existing client lists
 
-This repository was developed as part of automation project for a customer. Customer ask was to manage existing client lists using terraform. Akamai terraform cli provides excellent way to export existing delivery/security and other supported product configuration into terraform files but unfortunately client list is not yet part of akamai terraform cli. 
+Akamai terraform cli provides excellent way to export existing delivery/security and other supported product configuration into terraform files but unfortunately client list is not yet part of akamai terraform CLI. Code in this repository helps to mimic the behavior of akamai terraform CLI and extracts client lists from Akamai Control Centre into terraform code on your dev machine.
 
 1. This repo consist of script that reads through input template file and generate terraform code
 2. To keep it in sync with akamai terraform cli, it generates files in similar naming convention for e.g. main.tf, variables.tf and import.sh
 3. import.sh consist of all the resources that needs to be imported into terraform stack. 
+4. Be aware that activation block uses latest version always, if you don't want to always activate the newest version then feel free to modify the main.tf file and put the numbered version or use any other logic to get the version. 
 
 ## Purpose
 This repository provides a script that automates the generation of terraform code for client list. 
@@ -24,12 +25,12 @@ This repository provides a script that automates the generation of terraform cod
 1. Clone the repository, using following command:
 
 ```bash
-> git clone <git url>
-> cd <repo_name>
+> git clone https://github.com/deepakjd2004/Terraform-Code-Generator-Akamai-Client-List
+> cd Terraform-Code-Generator-Akamai-Client-List
 ```
 
-2. Modify `config.yaml` file - This file contains all the value of variables that you need to provide to run the script. User needs to provide client lists that needs to be managed via. terraform. 
-3. `python generate_client_list_tf_code.py` to run the script. This script creates import.sh, variables.tf and main.tf file. If edgerc section you are targeting is other then defaul then update variables.tf file.
+2. Modify `config.yaml` file - This file contains all the inputs that you need to provide to run the script. User needs to provide client lists name (including group and contract id) that needs to be managed via. terraform. 
+3. `python generate_client_list_tf_code.py` to run the script. This script creates import.sh, variables.tf and main.tf file. If edgerc section you are targeting is other then default then update section in variables.tf file.
 4. Run `. ./import.sh` to import the networklist. This will generate terraform state file with resources
 5. All set, now start managing resources using terraform
 
