@@ -52,6 +52,17 @@ This repository provides a script that automates the generation of terraform cod
 | pybase                                                      | pip library             | 1.3.1   |
 | pyYaml                                                      | pip library             | 6.0.1   |
 
+## Disclaimer
+
+**No Guarantee and Use at Your Own Risk**
+
+This repository contains code that is provided for educational and informational purposes only. It is provided "as-is," without any warranties or guarantees of any kind. 
+
+**The author(s) and contributors make no representations or warranties about the accuracy, reliability, completeness, or timeliness of the code or any other information provided in this repository.**
+
+By using this code, you agree to use it at your own risk. The author(s) and contributors will not be held liable for any damages, losses, or other consequences that may arise from using or relying on this code.
+
+Please review and test the code thoroughly before using it in any production environment. Make sure it meets your requirements and conforms to your security and operational standards.
 
 
 <!-- END_DOCS -->
