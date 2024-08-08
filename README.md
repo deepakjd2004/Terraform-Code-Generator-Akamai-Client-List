@@ -44,12 +44,13 @@ This repository provides a script that automates the generation of terraform cod
 
 ## Libraries
 
+This script was tested with below version of python libraries. 
+
 | Name                                                        | Source                  | Version |
 | ----------------------------------------------------------- | ----------------------- | ------- |
-| requests                                                    | pip library             | 2.24.0  |
-| edgegrid-python                                             | pip library             | 1.1.1   |
-| akamaihttp                                                  | pip library             | 0.1     |
-| pybase                                                      | pip library             | 1.3.1   |
+| requests                                                    | pip library             | 2.32.3  |
+| edgegrid-python                                             | pip library             | 1.3.1   |
+| akamaihttp                                                  | pip library             | 1.6.4   |
 | pyYaml                                                      | pip library             | 6.0.1   |
 
 ## Disclaimer
