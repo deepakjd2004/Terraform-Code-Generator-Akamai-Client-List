@@ -1,0 +1,20 @@
+# **********************************************************************************************************************************************************************************
+# It is assumed that for a customer all client list should be part of one contract. Can easily modify the script for cases when it is not the case.
+# lists can be part of different groups so it is a list.
+# Within one group there can be multiple lists so lists is also list of values
+# ContractId and GroupId can be found using api/cli or UI.
+# **********************************************************************************************************************************************************************************
+contract_id: "1-3CV382"
+groups:
+  - group_id: 18385
+    lists:
+      - "dj-tf-test"
+      - "Roger_Test_CL_by_IP"
+  - group_id: 56299
+    lists:
+      - "cl_cchao_test"
+  - group_id: 18409
+    lists:
+      - "Reputation Allowlist (54646)"
+      - "Client-List-003"
+
