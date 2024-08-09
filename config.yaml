@@ -4,17 +4,17 @@
 # Within one group there can be multiple lists so lists is also list of values
 # ContractId and GroupId can be found using api/cli or UI.
 # **********************************************************************************************************************************************************************************
-contract_id: "1-3CV382"
+contract_id: "1-xxxxx"
 groups:
-  - group_id: 18385
+  - group_id: 111111
     lists:
       - "dj-tf-test"
       - "Roger_Test_CL_by_IP"
-  - group_id: 56299
+  - group_id: 22222
     lists:
       - "cl_cchao_test"
-  - group_id: 18409
+  - group_id: 19999
     lists:
-      - "Reputation Allowlist (54646)"
+      - "Reputation Allowlist"
       - "Client-List-003"
 
