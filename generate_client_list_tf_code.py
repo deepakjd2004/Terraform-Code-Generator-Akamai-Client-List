@@ -106,7 +106,7 @@ def generate_terraform_code(lists, contract_id, groups):
             if lst['productionActivationStatus'] == 'ACTIVE':
                 activation_code.append(f'resource "akamai_clientlist_activation" "{terraform_name}_prod" {{')
                 activation_code.append(f'  list_id                 = "{lst["listId"]}"')
-                activation_code.append(f'  version                 = akamai_clientlist_list.{terraform_name}.version'')
+                activation_code.append(f'  version                 = akamai_clientlist_list.{terraform_name}.version')
                 activation_code.append(f'  network                 = "PRODUCTION"')
                 activation_code.append(f'  comments                = var.comments')
                 activation_code.append(f'  notification_recipients = var.email')
@@ -117,7 +117,7 @@ def generate_terraform_code(lists, contract_id, groups):
             if lst['stagingActivationStatus'] == 'ACTIVE':
                 activation_code.append(f'resource "akamai_clientlist_activation" "{terraform_name}_staging" {{')
                 activation_code.append(f'  list_id                 = "{lst["listId"]}"')
-                activation_code.append(f'  version                 = akamai_clientlist_list.{terraform_name}.version'')
+                activation_code.append(f'  version                 = akamai_clientlist_list.{terraform_name}.version')
                 activation_code.append(f'  network                 = "STAGING"')
                 activation_code.append(f'  comments                = var.comments')
                 activation_code.append(f'  notification_recipients = var.email')
