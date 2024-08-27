@@ -1,8 +1,8 @@
 <!-- BEGIN_DOCS -->
 
-# Generate terraform code for managing existing client lists
+# Generate terraform code for managing existing client lists in bulk
 
-Akamai terraform cli provides excellent way to export existing delivery/security and other supported product configuration into terraform files but unfortunately client list is not yet part of akamai terraform CLI. Code in this repository helps to mimic the behavior of akamai terraform CLI and extracts client lists from Akamai Control Centre into terraform code on your dev machine.
+Akamai terraform cli provides excellent way to export existing delivery/security and other supported product configuration into terraform files. Code in this repository helps to mimic the behavior of akamai terraform CLI and extracts client lists from Akamai Control Centre into terraform code. This repository will be useful for cases when customer want to bulk extract client list and start managing using terraform.
 
 1. This repo consist of script that reads through input template file and generate terraform code
 2. To keep it in sync with akamai terraform cli, it generates files in similar naming convention for e.g. main.tf, variables.tf and import.sh
